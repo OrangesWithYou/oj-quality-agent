@@ -1,0 +1,40 @@
+{
+  "cases": [
+    {
+      "problem_id": "cf_2135e2_beyond_the_palindrome_hard_single",
+      "problem_text": "Title: Beyond the Palindrome (Hard Version)\nTask: For a binary string r, define f(r) by repeatedly deleting all substrings \"10\" simultaneously until no \"10\" remains. A binary string s is called almost-palindrome iff f(s)=f(rev(s)). Given n, count the number of distinct binary strings of length n that are almost-palindrome, modulo 998244353.\nInput: The first line contains an integer t. Each of the next t lines contains one integer n.\nOutput: For each test case, output one integer: the number of almost-palindrome binary strings of length n modulo 998244353.",
+      "stdin": null,
+      "expected_output": null,
+      "sample_plan": [
+        {
+          "temperature": 0.1,
+          "top_p": 0.9,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.2,
+          "top_p": 0.9,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.3,
+          "top_p": 0.95,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.4,
+          "top_p": 0.95,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        }
+      ],
+      "metadata": {
+        "source": "codeforces_2135e2",
+        "difficulty": "very_hard"
+      }
+    }
+  ]
+}

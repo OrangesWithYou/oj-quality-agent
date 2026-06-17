@@ -1,0 +1,184 @@
+{
+  "cases": [
+    {
+      "problem_id": "new_q001_sum_two_ints",
+      "problem_text": "Title: Sum Two Integers\nTask: Read two integers a and b, output a+b.\nInput: one line with two integers.\nOutput: one integer.",
+      "stdin": "12 30\n",
+      "expected_output": "42\n",
+      "sample_plan": [
+        {
+          "temperature": 0.1,
+          "top_p": 0.9,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.2,
+          "top_p": 0.9,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.3,
+          "top_p": 0.95,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.4,
+          "top_p": 0.95,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        }
+      ],
+      "metadata": {
+        "source": "new_template_5",
+        "difficulty": "easy"
+      }
+    },
+    {
+      "problem_id": "new_q002_diff_two_ints",
+      "problem_text": "Title: Difference\nTask: Read two integers a and b, output a-b.\nInput: one line with two integers.\nOutput: one integer.",
+      "stdin": "50 8\n",
+      "expected_output": "42\n",
+      "sample_plan": [
+        {
+          "temperature": 0.1,
+          "top_p": 0.9,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.2,
+          "top_p": 0.9,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.3,
+          "top_p": 0.95,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.4,
+          "top_p": 0.95,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        }
+      ],
+      "metadata": {
+        "source": "new_template_5",
+        "difficulty": "easy"
+      }
+    },
+    {
+      "problem_id": "new_q003_max_of_three",
+      "problem_text": "Title: Max of Three\nTask: Read three integers a b c, print the maximum.\nInput: one line with three integers.\nOutput: one integer.",
+      "stdin": "7 42 19\n",
+      "expected_output": "42\n",
+      "sample_plan": [
+        {
+          "temperature": 0.1,
+          "top_p": 0.9,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.2,
+          "top_p": 0.9,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.3,
+          "top_p": 0.95,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.4,
+          "top_p": 0.95,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        }
+      ],
+      "metadata": {
+        "source": "new_template_5",
+        "difficulty": "easy"
+      }
+    },
+    {
+      "problem_id": "new_q004_product_two_ints",
+      "problem_text": "Title: Product\nTask: Read two integers a and b, output a*b.\nInput: one line with two integers.\nOutput: one integer.",
+      "stdin": "6 7\n",
+      "expected_output": "42\n",
+      "sample_plan": [
+        {
+          "temperature": 0.1,
+          "top_p": 0.9,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.2,
+          "top_p": 0.9,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.3,
+          "top_p": 0.95,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.4,
+          "top_p": 0.95,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        }
+      ],
+      "metadata": {
+        "source": "new_template_5",
+        "difficulty": "easy"
+      }
+    },
+    {
+      "problem_id": "new_q005_pair_sum_until_eof",
+      "problem_text": "Title: Pair Sum Until EOF\nTask: Each non-empty line has two integers x y. For each line, print x+y. Read until EOF.\nInput: multiple lines.\nOutput: one answer per line.",
+      "stdin": "20 22\n1 41\n-10 52\n",
+      "expected_output": "42\n42\n42\n",
+      "sample_plan": [
+        {
+          "temperature": 0.1,
+          "top_p": 0.9,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.2,
+          "top_p": 0.9,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.3,
+          "top_p": 0.95,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.4,
+          "top_p": 0.95,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        }
+      ],
+      "metadata": {
+        "source": "new_template_5",
+        "difficulty": "easy"
+      }
+    }
+  ]
+}

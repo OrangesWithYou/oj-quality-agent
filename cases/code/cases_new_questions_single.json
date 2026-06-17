@@ -1,0 +1,40 @@
+{
+  "cases": [
+    {
+      "problem_id": "new_easy_sum_two_ints_single",
+      "problem_text": "Title: Sum Two Integers\nTask: Read two integers a and b from standard input, and output a+b.\nInput: One line with two integers.\nOutput: One integer followed by newline.",
+      "stdin": "123 456\n",
+      "expected_output": "579\n",
+      "sample_plan": [
+        {
+          "temperature": 0.1,
+          "top_p": 0.9,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.2,
+          "top_p": 0.9,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.3,
+          "top_p": 0.95,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.4,
+          "top_p": 0.95,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        }
+      ],
+      "metadata": {
+        "source": "new_demo_single",
+        "difficulty": "easy"
+      }
+    }
+  ]
+}

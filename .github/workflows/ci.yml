@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  python-checks:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install package
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[agent]"
+
+      - name: Import check
+        run: |
+          python -B -c "import streamlit, langchain, langgraph, langfuse, quality_agent, quality_ui"
+
+      - name: Compile check
+        run: |
+          python -m compileall -q agents apps tools run_cases_file.py judge.py

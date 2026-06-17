@@ -1,0 +1,157 @@
+{
+  "cases": [
+    {
+      "problem_id": "redesign_code_001_longest_subarray_sum_k",
+      "problem_text": "Title: Longest Subarray With Exact Sum K\nTask: Given an array of n integers and an integer K, find the maximum length of a contiguous subarray whose sum is exactly K. The array may contain negative numbers. If no such subarray exists, output 0.\nInput: The first line contains two integers n and K. The second line contains n integers a1, a2, ..., an.\nConstraints: 1 <= n <= 200000, -1000000000 <= ai <= 1000000000, -1000000000 <= K <= 1000000000.\nOutput: Print one integer, the maximum length.",
+      "stdin": "8 5\n1 2 -1 3 -2 4 -3 2\n",
+      "expected_output": "7\n",
+      "sample_plan": [
+        {
+          "temperature": 0.1,
+          "top_p": 0.9,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.2,
+          "top_p": 0.9,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.3,
+          "top_p": 0.95,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.4,
+          "top_p": 0.95,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        }
+      ],
+      "metadata": {
+        "source": "redesign_manual",
+        "difficulty": "medium"
+      }
+    },
+    {
+      "problem_id": "redesign_code_002_count_shortest_paths",
+      "problem_text": "Title: Count Shortest Paths\nTask: Given a directed weighted graph with positive edge weights, a start vertex s, and an end vertex t, compute the length of the shortest path from s to t and the number of different shortest paths. Count paths modulo 1000000007. If t is unreachable, output -1 0.\nInput: The first line contains four integers n, m, s, t. Each of the next m lines contains three integers u, v, w, denoting a directed edge from u to v with weight w.\nConstraints: 1 <= n <= 200000, 0 <= m <= 300000, 1 <= w <= 1000000000.\nOutput: Print two integers: the shortest distance and the number of shortest paths modulo 1000000007.",
+      "stdin": "6 8 1 6\n1 2 1\n1 3 1\n2 4 1\n3 4 1\n2 5 2\n3 5 2\n4 6 2\n5 6 1\n",
+      "expected_output": "4 4\n",
+      "sample_plan": [
+        {
+          "temperature": 0.1,
+          "top_p": 0.9,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.2,
+          "top_p": 0.9,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.3,
+          "top_p": 0.95,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.4,
+          "top_p": 0.95,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        }
+      ],
+      "metadata": {
+        "source": "redesign_manual",
+        "difficulty": "hard"
+      }
+    },
+    {
+      "problem_id": "redesign_code_003_hamiltonian_paths_bitmask",
+      "problem_text": "Title: Hamiltonian Paths From S to T\nTask: Given an undirected simple graph with n vertices, count the number of Hamiltonian paths that start at vertex s, end at vertex t, and visit every vertex exactly once. Two paths are different if their vertex sequences are different. Output the answer modulo 1000000007.\nInput: The first line contains four integers n, m, s, t. Each of the next m lines contains two integers u and v, denoting an undirected edge.\nConstraints: 2 <= n <= 20, 0 <= m <= n*(n-1)/2, 1 <= s,t <= n, s != t.\nOutput: Print one integer, the number of Hamiltonian paths from s to t modulo 1000000007.",
+      "stdin": "5 6 1 5\n1 2\n1 3\n2 3\n2 4\n3 4\n4 5\n",
+      "expected_output": "2\n",
+      "sample_plan": [
+        {
+          "temperature": 0.1,
+          "top_p": 0.9,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.2,
+          "top_p": 0.9,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.3,
+          "top_p": 0.95,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        },
+        {
+          "temperature": 0.4,
+          "top_p": 0.95,
+          "frequency_penalty": 0.0,
+          "top_k": 64
+        }
+      ],
+      "metadata": {
+        "source": "redesign_manual",
+        "difficulty": "super_hard"
+      }
+    },
+    {
+      "ID": "redesign_math_001_dijkstra_complexity",
+      "gtupe": "单选",
+      "question": "在边权均为非负数的图上，若使用邻接表和二叉堆实现 Dijkstra 算法，通常的时间复杂度是哪一项？ (单选题)",
+      "keypoint": "最短路算法复杂度",
+      "answer": "B",
+      "choices": "A. O(n^2)\nB. O((n+m)log n)\nC. O(nm)\nD. O(log n)",
+      "explanation": "邻接表会遍历所有边，二叉堆中每次取出/更新距离的代价为对数级，因此常见实现复杂度为 O((n+m)log n)。O(n^2)更接近朴素数组实现，O(nm)和O(log n)不符合该算法流程。",
+      "subject": "计算机科学",
+      "hard_level": "中",
+      "grade": "大学",
+      "language": "zh",
+      "images": "null",
+      "code_path": "null"
+    },
+    {
+      "ID": "redesign_math_002_maxflow_mincut",
+      "gtupe": "单选",
+      "question": "对一个有向网络运行最大流算法后，在最终残量网络中从源点 s 能到达的点集记为 S，其他点记为 T。下列说法正确的是哪一项？ (单选题)",
+      "keypoint": "最大流最小割定理",
+      "answer": "C",
+      "choices": "A. 所有从 T 指向 S 的原图边都必须满流\nB. 集合 S 到集合 T 的割容量一定小于最大流值\nC. 所有从 S 指向 T 的原图边在最大流中均已满流，该割容量等于最大流值\nD. 只要存在从 S 指向 T 的原图边，残量网络中就一定还能增广",
+      "explanation": "最大流结束时，残量网络中不存在从 s 到 t 的增广路。令 S 为残量网络中 s 可达点集，则任何从 S 到 T 的原图边都没有剩余容量，否则 T 中端点也可达，因此这些边满流；该割容量等于当前流值，也等于最大流值。",
+      "subject": "计算机科学",
+      "hard_level": "难",
+      "grade": "大学",
+      "language": "zh",
+      "images": "null",
+      "code_path": "null"
+    },
+    {
+      "ID": "redesign_math_003_astar_consistency",
+      "gtupe": "单选",
+      "question": "在带非负边权的图搜索中，A* 算法使用一致性启发函数 h，即对任意边 (u,v) 都满足 h(u) <= cost(u,v)+h(v)，且 h(t)=0。下列哪一项必然成立？ (单选题)",
+      "keypoint": "A* 一致性启发函数",
+      "answer": "B",
+      "choices": "A. 一致性启发函数允许高估从任意点到目标点的真实最短距离\nB. 当一个节点第一次从优先队列中弹出时，它的 g 值已经是从起点到该节点的最短距离\nC. 一致性只保证树搜索最优，不保证图搜索最优\nD. 沿任意一条搜索路径，f=g+h 的值一定严格递减",
+      "explanation": "一致性启发函数会推出可采纳性，并保证沿边扩展时 f 值不下降。因此在图搜索中，节点首次出队时其 g 值已经最优，关闭后无需重新打开。A 错在一致性不会高估；C 错在一致性正是图搜索无需重复打开节点的重要条件；D 错在 f 是非递减而不是严格递减。",
+      "subject": "计算机科学",
+      "hard_level": "超级难",
+      "grade": "大学",
+      "language": "zh",
+      "images": "null",
+      "code_path": "null"
+    }
+  ]
+}
