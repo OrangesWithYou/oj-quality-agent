@@ -1,4 +1,4 @@
-# 质检难题智能体_鲍元吉_20260617
+# 质检难题智能体_20260617
 
 > 面向题库采购与数据集交付场景的智能质检平台：支持 JSON / JSONL 字段标准化、OJ/客观题评测、LangGraph Agent 编排、LangChain 工具封装、Langfuse 轨迹追踪与 Streamlit 可视化操作。
 
